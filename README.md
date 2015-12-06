@@ -1,4 +1,4 @@
-#Picture Puzzle, html,css,javascript.
+#Picture Puzzle: HTML, CSS, JavaScript.
 ##100 day project challenge
 #Day 5
 
