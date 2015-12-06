@@ -6,6 +6,9 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
+		<script src="sweetalert/dist/sweetalert.min.js"></script> '
+		<link rel="stylesheet" type="text/css" href="sweetalert/dist/sweetalert.css">
+
 		<style>
 			html, body {
 				margin: 0;
@@ -21,8 +24,8 @@
 				height: 256px;
 				background-color: red;
 				position: absolute;
+				top: 300px;
 				left: 700px;
-				
 				background-image: url('1.png');
 				
 			}
@@ -32,8 +35,8 @@
 				height: 256px;
 				background-color: blue;
 				position: absolute;
+				top: 300px;
 				left: 700px;
-				
 				background-image: url('2.png');
 
 			}
@@ -43,8 +46,8 @@
 				height: 256px;
 				background-color: pink ;
 				position: absolute;
+				top: 300px;
 				left: 700px;
-				
 				background-image: url('3.png');
 
 			}
@@ -54,8 +57,8 @@
 				height: 256px;
 				background-color: yellow;
 				position: absolute;
+				top: 300px;
 				left: 700px;
-				
 				background-image: url('4.png');
 
 			}
@@ -65,8 +68,8 @@
 				height: 256px;
 				background-color: green;
 				position: absolute;
+				top: 300px;
 				left: 700px;
-				
 				background-image: url('5.png');
 
 			}
@@ -76,8 +79,8 @@
 				height: 256px;
 				background-color: magenta;
 				position: absolute;
+				top: 300px;
 				left: 700px;
-				
 				background-image: url('6.png');
 
 			}
@@ -87,8 +90,8 @@
 				height: 256px;
 				background-color: brown;
 				position: absolute;
+				top: 300px;
 				left: 700px;
-				
 				background-image: url('7.png');
 
 			}
@@ -98,8 +101,8 @@
 				height: 256px;
 				background-color: grey;
 				position: absolute;
+				top: 300px;
 				left: 700px;
-				
 				background-image: url('8.png');
 
 			}
@@ -109,8 +112,8 @@
 				height: 256px;
 				background-color: purple ;
 				position: absolute;
+				top: 300px;
 				left: 700px;
-				
 				background-image: url('9.png');
 
 			}
@@ -135,8 +138,12 @@
 
 		  <script>
 
+
 		
 		  $(document).ready(function(){
+
+		  	swal("Spread the images by dragging them over the body")
+
 		  	$('div').draggable();
 		  })
 
