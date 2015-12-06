@@ -4,15 +4,12 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
 		<style>
-			* {
+			html, body {
 				margin: 0;
 				padding: 0;
-			}
-
-			.container {
-				width: 100%;
-				height: 100%;
 				background-color: black;
 			}
 
@@ -20,65 +17,101 @@
 			
 
 			.oneImage {
-				width: 200px;
+				width: 320px;
 				height: 200px;
 				background-color: red;
+				position: absolute;
+				left: 700px;
+				
+				background-image: url('1.png');
 				
 			}
 
 			.twoImage {
-				width: 200px;
+				width: 320px;
 				height: 200px;
 				background-color: blue;
+				position: absolute;
+				left: 700px;
+				
+				background-image: url('2.png');
 
 			}
 
 			.threeImage {
-				width: 200px;
+				width: 320px;
 				height: 200px;
 				background-color: pink ;
+				position: absolute;
+				left: 700px;
+				
+				background-image: url('3.png');
 
 			}
 
 			.fourImage {
-				width: 200px;
+				width: 320px;
 				height: 200px;
 				background-color: yellow;
+				position: absolute;
+				left: 700px;
+				
+				background-image: url('4.png');
 
 			}
 
 			.fiveImage {
-				width: 200px;
+				width: 320px;
 				height: 200px;
 				background-color: green;
+				position: absolute;
+				left: 700px;
+				
+				background-image: url('5.png');
 
 			}
 
 			.sixImage {
-				width: 200px;
+				width: 320px;
 				height: 200px;
 				background-color: magenta;
+				position: absolute;
+				left: 700px;
+				
+				background-image: url('6.png');
 
 			}
 
 			.sevenImage {
-				width: 200px;
+				width: 320px;
 				height: 200px;
 				background-color: brown;
+				position: absolute;
+				left: 700px;
+				
+				background-image: url('7.png');
 
 			}
 
 			.eightImage {
-				width: 200px;
+				width: 320px;
 				height: 200px;
 				background-color: grey;
+				position: absolute;
+				left: 700px;
+				
+				background-image: url('8.png');
 
 			}
 
 			.nineImage {
-				width: 200px;
+				width: 320px;
 				height: 200px;
 				background-color: purple ;
+				position: absolute;
+				left: 700px;
+				
+				background-image: url('9.png');
 
 			}
 
@@ -88,7 +121,6 @@
 
 	<body>
 
-		<div class="container">
 			<div class="oneImage"></div>
 			<div class="twoImage"></div>
 			<div class="threeImage"></div>
@@ -98,74 +130,18 @@
 			<div class="sevenImage"></div>
 			<div class="eightImage"></div>
 			<div class="nineImage"></div>
-		</div>
+	
 		
 
-		<script>
+		  <script>
 
-		// Returns a random integer between min and max
-		// Using Math.round() will give you a non-uniform distribution!
-		function getRandomInt(min, max) {
-		return Math.floor(Math.random() * (max - min + 1) + min);
-		}
-
-		//Randomize the position of all your elements, identified by a specific class
-		//In case you have several items. Either, don't use the each()
-		$('.oneImage').each(function(){
-		$(this).css({'marginTop' : getRandomInt(-100,600), 'marginTop' : getRandomInt(-100,600), 'marginLeft' : getRandomInt(-199,600)});
-		});
-
-
-
-		$('.twoImage').each(function(){
-		$(this).css({'marginTop' : getRandomInt(-100,600), 'marginTop' : getRandomInt(-100,600), 'marginLeft' : getRandomInt(-199,600)});
-		});
-
-
-
-		$('.threeImage').each(function(){
-		$(this).css({'marginTop' : getRandomInt(-100,600), 'marginTop' : getRandomInt(-100,600), 'marginLeft' : getRandomInt(-199,600)});
-		});
-
-
-
-		$('.fourImage').each(function(){
-		$(this).css({'marginTop' : getRandomInt(-100,600), 'marginTop' : getRandomInt(-100,600), 'marginLeft' : getRandomInt(-199,600)});
-		});
-
-
-
-		$('.fiveImage').each(function(){
-		$(this).css({'marginTop' : getRandomInt(-100,600), 'marginTop' : getRandomInt(-100,600), 'marginLeft' : getRandomInt(-199,600)});
-		});
-
-
-
-		$('.sixImage').each(function(){
-		$(this).css({'marginTop' : getRandomInt(-100,600), 'marginTop' : getRandomInt(-100,600), 'marginLeft' : getRandomInt(-199,600)});
-		});
-
-
-
-		$('.sevenImage').each(function(){
-		$(this).css({'marginTop' : getRandomInt(-100,600), 'marginTop' : getRandomInt(-100,600), 'marginLeft' : getRandomInt(-199,600)});
-		});
-
-
-
-		$('.eightImage').each(function(){
-		$(this).css({'marginTop' : getRandomInt(-100,600), 'marginTop' : getRandomInt(-100,600), 'marginLeft' : getRandomInt(-199,600)});
-		});
-
-
-
-		$('.nineImage').each(function(){
-		$(this).css({'marginTop' : getRandomInt(-100,600), 'marginTop' : getRandomInt(-100,600), 'marginLeft' : getRandomInt(-199,600)});
-		});
-
+		
+		  $(document).ready(function(){
+		  	$('div').draggable();
+		  })
 
 
 			
-		</script>
+		 </script>
 	</body>
 </html>
